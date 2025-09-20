@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>favorites</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: #f8f8f8;
+    }
+    .text {
+      background-color: rgb(177, 120, 52);
+      border-radius: 30px;
+      padding: 20px;
+      font-size: 30px;
+      margin: 150px auto 0;
+      max-width: 800px;
+    }
+    p {
+      background-color: rgb(177, 120, 52);
+      border-radius: 40px;
+      margin: 100px auto 40px;
+      font-size: 30px;
+      text-align: center;
+      padding: 10px 20px;
+      max-width: 400px;
+    }
+    .sobre {
+      background-color: rgb(177, 120, 52);
+      border-radius: 30px;
+      padding: 20px;
+      font-size: 20px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    /* fotos */
+    .foto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      margin: 40px auto;
+      max-width: 800px;
+    }
+    .foto img {
+      width: 100%;
+      max-width: 600px;
+      height: 400px; /* deixa todas iguais */
+      object-fit: cover; /* corta proporcionalmente sem distorcer */
+      border-radius: 20px;
+      box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .foto img:hover {
+      transform: scale(1.02);
+    }
+    /* footer */
+    footer.liquid-glass {
+      background-color: rgb(177, 120, 52);
+      border-radius: 40px;
+      padding: 60px 40px;
+      margin-top: 80px;
+      box-shadow: inset 0 0 0 0.5px rgb(0, 0, 0),
+                  0 30px 60px rgba(0, 0, 0, 0.15);
+      color: #111;
+      user-select: none;
+    }
+    .footer-wrapper {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    footer h3 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 32px;
+    }
+    .links {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.103);
+      transition: all 0.5s ease;
+      width: 48px;
+      height: 48px;
+      position: relative;
+    }
+    .link img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+    }
+    .link .label {
+      opacity: 0;
+      max-width: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+      color: #111;
+    }
+    .link:hover {
+      width: 140px;
+      background: rgba(56, 42, 10, 0.315);
+      box-shadow: 5px 1px 10px rgba(56, 42, 10, 0.315);
+    }
+    .link:hover img {
+      transform: scale(1.1);
+    }
+    .link:hover .label {
+      opacity: 1;
+      max-width: 100px;
+      margin-left: 8px;
+      font-weight: 500;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+    footer .copy {
+      margin-top: 48px;
+      font-size: 0.9rem;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="text"><h1>Olá, sou o Gabriel. Tudo bem?</h1></div>
+
+  <p>sobre mim</p>
+  <div class="sobre">
+    <h2>Sou um fotógrafo amador apaixonado por registrar a natureza em seus detalhes mais simples e grandiosos. Cada clique é uma forma de eternizar a calma de um pôr do sol, a força de uma árvore ou o movimento sutil do vento. Acredito que a beleza do mundo já está pronta, só precisa ser revelada pelo olhar certo.</h2>
+  </div>
+
+  <p>fotos favoritas</p>
+  <div class="foto">
+    <img src="foto10.png" alt="">
+    <img src="foto3.png" alt="">
+    <img src="foto4.png" alt="">
+    <img src="foto7.png" alt="">
+    <img src="Imagem do WhatsApp de 2025-09-19 à(s) 19.11.59_5c1abfde.jpg" alt="">
+  </div>
+
+  <footer class="liquid-glass" id="contato">
+    <div class="footer-wrapper">
+      <h3>Fale comigo!</h3>
+      <div class="links">
+        <a href="mailto:gabrielsousanascimento810@gmail.com" class="link">
+          <img src="https://img.icons8.com/ios-filled/50/111111/new-post.png" alt="Email" />
+          <span class="label">Email</span>
+        </a>
+        <a href="https://instagram.com/gbzin_vk7" target="_blank" rel="noopener noreferrer" class="link">
+          <img src="https://img.icons8.com/ios-filled/50/111111/instagram-new.png" alt="Instagram" />
+          <span class="label">Instagram</span>
+        </a>
+      </div>
+      <p class="copy">&copy; 2025 João Gabriel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
